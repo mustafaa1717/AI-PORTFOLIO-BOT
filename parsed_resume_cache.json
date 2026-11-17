@@ -1,0 +1,44 @@
+{
+  "stamp": "Mustafa_Shaikh_Resume (5).pdf:1794150559.9279575",
+  "resume": {
+    "name": "Mustafa Shaikh",
+    "email": "mustafaraza1717@gmail.com",
+    "phone": "+91-9850518880",
+    "total_experience_years": null,
+    "skills": [
+      "C",
+      "C++",
+      "Java",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "WebSockets (Socket.io)",
+      "React",
+      "Vite",
+      "MongoDB",
+      "SQL",
+      "Docker",
+      "Render",
+      "GitHub Webhooks",
+      "OAuth",
+      "Event-Driven Architecture",
+      "API Design",
+      "Git",
+      "Postman",
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming",
+      "Operating Systems",
+      "DBMS"
+    ],
+    "experiences": [],
+    "education": [
+      "KLE Technological University | B.E. Computer Science & Engineering | CGPA: 9.2/10 2024 \u2013 2028 (Expected)"
+    ],
+    "projects": [
+      "Video Sharing & Microblogging Network | MERN Stack, Docker, Render, Vite, React Query, Zustand, Cloudinary \u2013 Built and deployed a full-stack MERN media platform with video streaming, microblogging, and user subscriptions. \u2013 Engineered a REST API (Node.js, Express) with MongoDB aggregation pipelines for subscriber counts and watch history. \u2013 Built a React + Vite frontend using React Query for server-state caching and Zustand for auth state. \u2013 Integrated Multer and Cloudinary for uploads; containerized with Docker and deployed on Render.",
+      "Distributed CI/CD Pipeline Orchestrator & Execution Engine | Node.js, Docker, React, Socket.io, OAuth \u2013 Architected a distributed CI/CD orchestrator that models build/test/deploy workflows as Directed Acyclic Graphs (DAGs) with dynamic dependency resolution. \u2013 Built a resource-aware scheduler matching task CPU/RAM needs to live runner capacity to prevent host starvation. \u2013 Ran tasks in isolated Docker runners with CPU/memory quotas and shared-volume caching for artifact passing. \u2013 Streamed live container logs to a React dashboard in real time via WebSockets (Socket.io). \u2013 Designed fault tolerance with a 10s heartbeat protocol that detects dead runners and reschedules their stranded tasks automatically. \u2013 Added GitOps automation with GitHub Webhooks and OAuth, parsing YAML pipeline configs to trigger containerized builds on every push."
+    ],
+    "certifications": []
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "id": "6782978b",
+  "title": "how is mustafa",
+  "created_at": "2026-11-16T23:18:47",
+  "messages": [
+    {
+      "role": "user",
+      "content": "how is mustafa",
+      "timestamp": "2026-11-16T23:19:02",
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "Mustafa Shaikh’s professional background, skills, education, and project experience are detailed in his resume. Personal well‑being or characteristics beyond what is listed are not mentioned there. If you have questions about his technical work or qualifications, I’d be happy to help.",
+      "timestamp": "2026-11-16T23:19:02",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "what is teh full name of mustafa",
+      "timestamp": "2026-11-16T23:20:59",
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "The full name listed on the résumé is **Mustafa Shaikh**.",
+      "timestamp": "2026-11-16T23:20:59",
+      "metadata": {
+        "answered_from_resume": true,
+        "resume_sections_used": [],
+        "confidence": 0.99,
+        "suggested_follow_ups": [
+          "Can you tell me more about the projects you have worked on?",
+          "What technologies are you most comfortable with?",
+          "What is your expected graduation date and current academic standing?"
+        ]
+      }
+    },
+    {
+      "role": "user",
+      "content": "what i asked you first?",
+      "timestamp": "2026-11-16T23:22:01",
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "Your first question was: “how is mustafa”.",
+      "timestamp": "2026-11-16T23:22:01",
+      "metadata": {
+        "answered_from_resume": false,
+        "resume_sections_used": [],
+        "confidence": 0.99,
+        "suggested_follow_ups": [
+          "Can you tell me more about Mustafa's recent projects?",
+          "What technologies is Mustafa most proficient in?",
+          "What is Mustafa's educational background?"
+        ]
+      }
+    },
+    {
+      "role": "user",
+      "content": "\"Tell me about your CI/CD orchestrator project.\"",
+      "timestamp": "2026-11-16T23:22:49",
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "Mustafa Shaikh designed and built a **Distributed CI/CD Pipeline Orchestrator & Execution Engine** using **Node.js, Docker, React, Socket.io, and OAuth**.\n\n- **Architecture** – Modeled build, test, and deploy workflows as Directed Acyclic Graphs (DAGs) with dynamic dependency resolution.  \n- **Scheduler** – Implemented a resource‑aware scheduler that matches each task’s CPU/RAM requirements to the capacity of live Docker runners, preventing host starvation.  \n- **Isolation** – Executed tasks in isolated Docker containers with explicit CPU/memory quotas and shared‑volume caching to pass build artifacts between stages.  \n- **Real‑time Monitoring** – streamed live container logs to a React dashboard via WebSockets (Socket.io), giving developers instant feedback.  \n- **Fault Tolerance** – Added a 10‑second heartbeat protocol that detects dead runners and automatically reschedules any stranded tasks.  \n- **GitOps Integration** – Integrated GitHub Webhooks and OAuth to parse YAML pipeline configurations and trigger containerized builds on every code push.  \n\nThe system was containerized with Docker and the front‑end dashboard was built with React, providing an end‑to‑end, automated CI/CD solution.",
+      "timestamp": "2026-11-16T23:22:49",
+      "metadata": {
+        "answered_from_resume": true,
+        "resume_sections_used": [
+          "projects",
+          "skills"
+        ],
+        "confidence": 0.98,
+        "suggested_follow_ups": [
+          "How does the resource‑aware scheduler allocate CPU and memory to tasks?",
+          "What is the 10‑second heartbeat protocol and how does it handle runner failures?",
+          "Can you describe how you integrated GitHub Webhooks and OAuth for GitOps automation?"
+        ]
+      }
+    },
+    {
+      "role": "user",
+      "content": "\"What scheduling algorithms did you use?\"",
+      "timestamp": "2026-11-16T23:23:02",
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "The résumé does not specify which scheduling algorithms were used in the CI/CD orchestrator’s resource‑aware scheduler. It only states that the scheduler matches task CPU/RAM needs to the capacity of live Docker runners to prevent host starvation.",
+      "timestamp": "2026-11-16T23:23:02",
+      "metadata": {
+        "answered_from_resume": false,
+        "resume_sections_used": [
+          "projects"
+        ],
+        "confidence": 0.95,
+        "suggested_follow_ups": [
+          "Can you describe the specific scheduling algorithm or heuristic you implemented in the CI/CD orchestrator?",
+          "How does the scheduler handle resource contention and prioritize tasks?",
+          "What fault‑tolerance mechanisms are in place for handling runner failures and task rescheduling?"
+        ]
+      }
+    },
+    {
+      "role": "user",
+      "content": "\"Which one performed better and why?\"",
+      "timestamp": "2026-11-16T23:23:12",
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "The résumé does not provide details about specific scheduling algorithms or a performance comparison between them. It only mentions that the scheduler is resource‑aware, matching task CPU/RAM requirements to available Docker runner capacity. Therefore, no information is available on which algorithm performed better or why.",
+      "timestamp": "2026-11-16T23:23:12",
+      "metadata": {
+        "answered_from_resume": false,
+        "resume_sections_used": [],
+        "confidence": 0.95,
+        "suggested_follow_ups": [
+          "Can you describe the specific scheduling algorithm you implemented?",
+          "How does your scheduler handle resource contention under high load?",
+          "What metrics do you use to evaluate scheduler performance?"
+        ]
+      }
+    },
+    {
+      "role": "user",
+      "content": "Can you explain how that scheduler decides which runner should execute a task?",
+      "timestamp": "2026-11-16T23:24:06",
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "According to the résumé, Mustafa’s scheduler works by **matching each task’s CPU‑ and RAM‑requirements against the current capacity of the live Docker runners**. When a task is ready to run, the scheduler:\n\n1. **Inspects the task’s declared resource needs** (CPU cores, memory).  \n2. **Queries the pool of active runners** for their available quotas (the amount of CPU and RAM not already allocated).  \n3. **Selects a runner that can satisfy those requirements**—i.e., one whose free capacity meets or exceeds the task’s needs.  \n4. **Assigns the task to that runner**, thereby avoiding over‑commitment and preventing host starvation.\n\nThe résumé does not provide further specifics (e.g., whether it uses a first‑fit, best‑fit, or priority‑based heuristic), only that the algorithm is **resource‑aware** and aims to keep runners from being overloaded.",
+      "timestamp": "2026-11-16T23:24:06",
+      "metadata": {
+        "answered_from_resume": true,
+        "resume_sections_used": [
+          "projects"
+        ],
+        "confidence": 0.96,
+        "suggested_follow_ups": [
+          "Can you describe how the scheduler handles a runner failure during task execution?",
+          "What strategy does the scheduler use to select among multiple suitable runners (e.g., first‑fit, best‑fit, load‑balancing)?",
+          "How does the system enforce the CPU and RAM quotas for each Docker runner?"
+        ]
+      }
+    }
+  ],
+  "job": null,
+  "fit_report": null
+}
